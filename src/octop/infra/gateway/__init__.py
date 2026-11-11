@@ -1,1 +1,1 @@
-"""Octop Gateway — global AI interaction entry point."""
+"""liying Gateway — global AI interaction entry point."""

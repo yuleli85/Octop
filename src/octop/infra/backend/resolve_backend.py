@@ -1,4 +1,4 @@
-"""Resolve harness backend specs, including Octop-owned types.
+"""Resolve harness backend specs, including liying-owned types.
 
 ``tos`` is not a harness builtin. It is replaced with a :class:`TOSBackend`
 instance before ``resolve_backend`` runs, including inside composite routes.
@@ -41,7 +41,7 @@ def resolve_octop_backend(
     workspace_dir: str | Path | None = None,
     system_files_path: str = "",
 ) -> Any:
-    """Harness ``resolve_backend``, after Octop spec materialization."""
+    """Harness ``resolve_backend``, after liying spec materialization."""
     install_opensandbox_fs()
     from octop_harness.backends import resolve_backend
 

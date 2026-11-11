@@ -14,9 +14,9 @@ describe("resolveExpertPalette", () => {
     expect(resolveExpertPalette("#6366F1")).toBe("indigo");
   });
 
-  it("falls back to rose when color is missing", () => {
-    expect(resolveExpertPalette(null)).toBe("rose");
-    expect(resolveExpertPalette(undefined)).toBe("rose");
+  it("falls back to the default palette when color is missing", () => {
+    expect(resolveExpertPalette(null)).toBe("tech");
+    expect(resolveExpertPalette(undefined)).toBe("tech");
   });
 
   it("snaps nearby template pastels onto the nearest swatch", () => {
